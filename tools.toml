@@ -52,3 +52,6 @@ tools = ["helix", "vim", "neovim", "nano"]
 [[actions]]
 action = "Create fancy prompts"
 tools = ["gum"]
+[[actions]]
+action = "Calculator"
+tools = ["calc", "eva"]
