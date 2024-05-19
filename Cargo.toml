@@ -1,0 +1,13 @@
+[package]
+name = "tools"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+clap = { version = "4.5.4", features = ["derive"] }
+colored = "2.1.0"
+serde = { version = "1.0.202", features = ["derive"] }
+termimad = "0.29.2"
+toml = "0.8.13"
+which = "6.0.1"

@@ -1,0 +1,54 @@
+[[actions]]
+action = "List/Navigate all files"
+tools = ["exa", "ls", "ranger", "lf", "tree"]
+[[actions]]
+action = "Search in text"
+tools = ["grep", "rg"]
+[[actions]]
+action = "Send http requests"
+tools = ["wget", "curl", "http"]
+[[actions]]
+action = "Get info about a command"
+tools = ["man", "halp"]
+[[actions]]
+action = "Print file contents"
+tools = ["cat", "bat"]
+[[actions]]
+action = "Debug code"
+tools = ["gdb", "lldb", "ugdb"]
+[[actions]]
+action = "Monitor system performance"
+tools = ["top", "htop", "btm"]
+[[actions]]
+action = "Cheatsheets"
+tools = ["navi"]
+[[actions]]
+action = "Manage system wide packages"
+tools = ["nix", "topgrade", "yay", "pacman"]
+[[actions]]
+action = "Navigate crates.io"
+tools = ["crates-tui"]
+[[actions]]
+action = "Check disk usage"
+tools = ["df", "dust"]
+[[actions]]
+action = "Manage archives"
+tools = ["tar", "gzip", "zip", "unzip", "ouch"]
+[[actions]]
+action = "Work with hex"
+tools = ["hexedit", "hexdump", "file", "hexyl"]
+[[actions]]
+action = "Create code screenshots"
+tools = ["silicon"]
+[[actions]]
+action = "Manipulate json"
+tools = ["jj"]
+[[actions]]
+action = "Manage toolchain versions"
+tools = ["mise"]
+[[actions]]
+action = "Edit files"
+tools = ["helix", "vim", "neovim", "nano"]
+[[actions]]
+action = "Create fancy prompts"
+tools = ["gum"]
