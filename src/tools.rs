@@ -4,7 +4,7 @@ use anyhow::Result;
 
 pub(crate) static DEFAULT_TOOLS: &'static str = include_str!("../tools.toml");
 
-#[derive(Debug, serde::Serialize, serde::Deserialize)]
+#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
 pub(crate) struct Action {
     action: String,
     tools: Vec<String>,
@@ -28,6 +28,10 @@ pub(crate) struct Tools {
 impl Tools {
     pub(crate) fn actions(&self) -> &Vec<Action> {
         &self.actions
+    }
+
+    pub(crate) fn into_actions(self) -> Vec<Action> {
+        self.actions
     }
 }
 
