@@ -48,7 +48,7 @@ action = "Manage toolchain versions"
 tools = ["mise"]
 [[actions]]
 action = "Edit files"
-tools = ["helix", "vim", "neovim", "nano"]
+tools = ["helix", "vim", "nvim", "nano"]
 [[actions]]
 action = "Create fancy prompts"
 tools = ["gum"]

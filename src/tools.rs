@@ -40,7 +40,9 @@ fn default_tools() -> Result<Tools> {
 }
 
 fn user_tools(tool_file: Option<PathBuf>) -> Result<Tools> {
-    let user_tool_path = tool_file.unwrap_or_else(|| PathBuf::from_str("~/.tools.toml").unwrap());
+    let user_tool_path = tool_file.unwrap_or_else(|| {
+        PathBuf::from_str(format!("{}/.tools.toml", env!("HOME")).as_str()).unwrap()
+    });
     let user_tool_content = match std::fs::read_to_string(user_tool_path) {
         Ok(content) => content,
         Err(err) => match err.kind() {
